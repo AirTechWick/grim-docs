@@ -71,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#method-discovery-by-glockengerda" class="md-skip">
+        <a href="#tqfan-hard-modding-tutorial" class="md-skip">
           Skip to content
         </a>
       
@@ -414,6 +414,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           tqFan Hard Mod Tutorial
@@ -430,6 +432,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -438,8 +442,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#method-discovery-by-glockengerda" class="md-nav__link">
-    Method Discovery by GlockenGerda
+  <a href="#1-copy-mod_namearz-from-grim-dawnmodsmod_namedatabase" class="md-nav__link">
+    1. Copy mod_name.arz (from Grim Dawn\mods\mod_name\database)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-make-a-shortcut-to-grim-dawn-exe-youre-using-this-can-be" class="md-nav__link">
+    2. Make a shortcut to Grim Dawn .exe you’re using, this can be:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-add-basemods-preceded-with-one-space-as-argument-to-the-shortcut" class="md-nav__link">
+    3. Add /basemods (preceded with one space) as argument to the shortcut:
   </a>
   
 </li>
@@ -542,6 +560,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -550,8 +570,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#method-discovery-by-glockengerda" class="md-nav__link">
-    Method Discovery by GlockenGerda
+  <a href="#1-copy-mod_namearz-from-grim-dawnmodsmod_namedatabase" class="md-nav__link">
+    1. Copy mod_name.arz (from Grim Dawn\mods\mod_name\database)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-make-a-shortcut-to-grim-dawn-exe-youre-using-this-can-be" class="md-nav__link">
+    2. Make a shortcut to Grim Dawn .exe you’re using, this can be:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-add-basemods-preceded-with-one-space-as-argument-to-the-shortcut" class="md-nav__link">
+    3. Add /basemods (preceded with one space) as argument to the shortcut:
   </a>
   
 </li>
@@ -579,9 +613,52 @@
   
 
 
-  <h1>tqFan Hard Mod Tutorial</h1>
-
-<h2 id="method-discovery-by-glockengerda">Method Discovery by <a href="https://forums.crateentertainment.com/u/glockengerda/summary">GlockenGerda</a></h2>
+<h1 id="tqfan-hard-modding-tutorial">tqFan Hard Modding Tutorial</h1>
+<p>Author: <a href="https://forums.crateentertainment.com/u/tqFan">tqFan</a>
+Method Discovery by <a href="https://forums.crateentertainment.com/u/glockengerda/summary">GlockenGerda</a></p>
+<p>This new method of hardmodding is great because</p>
+<p>You don’t modify game files (by changing gdx2.arz for example) so they don’t get overwritten by Steam updates</p>
+<p>.arz that we mod with only contains changed files (gameengine.dbr in your example) so that you don’t need to update it usually (so much smaller chance of needing to update it)</p>
+<p>Mod is much smaller</p>
+<p>You can easily swap between various mods you created</p>
+<p>Allows to run two mods at the same time - one hardmodded using this method and another in a Custom Game one on top of it.</p>
+<h2 id="1-copy-mod_namearz-from-grim-dawnmodsmod_namedatabase">1. Copy mod_name.arz (from Grim Dawn\mods\mod_name\database)</h2>
+<ul>
+<li>
+<p>But rename it to database.arz</p>
+</li>
+<li>
+<p>Put it in Grim Dawn\mods (so basically copy two levels higher and with a name change to database.arz)</p>
+</li>
+<li>
+<p>Also copy all .arc files (if your mod has any) there from the mod folder without changing their name</p>
+</li>
+</ul>
+<h2 id="2-make-a-shortcut-to-grim-dawn-exe-youre-using-this-can-be">2. Make a shortcut to Grim Dawn .exe you’re using, this can be:</h2>
+<ul>
+<li>
+<p>64 bit Grim Dawn from C:\Program Files (x86)\Steam\steamapps\common\Grim Dawn\x64\Grim Dawn.exe</p>
+</li>
+<li>
+<p>Grim Internals from C:\Program Files (x86)\Steam\steamapps\common\Grim Dawn\GrimInternals64.exe</p>
+</li>
+<li>
+<p>32 bit Grim Dawn from C:\Program Files (x86)\Steam\steamapps\common\Grim Dawn\Grim Dawn.exe</p>
+</li>
+</ul>
+<h2 id="3-add-basemods-preceded-with-one-space-as-argument-to-the-shortcut">3. Add /basemods (preceded with one space) as argument to the shortcut:</h2>
+<p><img alt="example 1" src="../images/shortcutExample.png" /></p>
+<ul>
+<li>
+<p>You can optionally rename this shortcut so that you known it launches modded Grim Dawn</p>
+</li>
+<li>
+<p>Alternatively instead of making a shortcut you can add -basemods option in Steam Launch settings</p>
+</li>
+<li>
+<p>Launch the game from the shortcut</p>
+</li>
+</ul>
 
 
 
