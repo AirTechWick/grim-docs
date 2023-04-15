@@ -1,764 +1,378 @@
 
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
-    
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      
-      
-      
-      
-        <link rel="prev" href="../import-single-record/">
-      
-      
-        <link rel="next" href="../denis-edit-name/">
-      
-      <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.5">
-    
-    
-      
-        <title>powbam Edit NPC Name - Grim Docs</title>
-      
-    
-    
-      <link rel="stylesheet" href="../assets/stylesheets/main.7a7fce14.min.css">
-      
-        
-        <link rel="stylesheet" href="../assets/stylesheets/palette.a0c5b2b5.min.css">
-      
-      
+<!DOCTYPE html>
 
-    
-    
-    
-      
-        
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-      
-    
-    
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-    
-      
-
-    
-    
-    
-  </head>
-  
-  
-    
-    
-      
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="amber">
-  
-    
-    
-      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
-    
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
-    <div data-md-component="skip">
-      
-        
-        <a href="#how-to-edit-npc-names" class="md-skip">
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../import-single-record/" rel="prev"/>
+<link href="../denis-edit-name/" rel="next"/>
+<link href="../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-9.1.6" name="generator"/>
+<title>powbam Edit NPC Name - Grim Docs</title>
+<link href="../assets/stylesheets/main.ded33207.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.a0c5b2b5.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            
+                .gscrollbar-fixer { padding-right: 15px; }
+                .gdesc-inner { font-size: 0.75rem; }
+                body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+                body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+                body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+                </style><script src="../assets/javascripts/glightbox.min.js"></script></head>
+<body data-md-color-accent="amber" data-md-color-primary="red" data-md-color-scheme="default" dir="ltr">
+<script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#how-to-edit-npc-names">
           Skip to content
         </a>
-      
-    </div>
-    <div data-md-component="announce">
-      
-    </div>
-    
-    
-      
-
-  
-
+</div>
+<div data-md-component="announce">
+</div>
 <header class="md-header md-header--shadow" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Grim Docs" class="md-header__button md-logo" aria-label="Grim Docs" data-md-component="logo">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.92 5H5l9 9 1-.94m4.96 6.06-.84.84a.996.996 0 0 1-1.41 0l-3.12-3.12-2.68 2.66-1.41-1.41 1.42-1.42L3 7.75V3h4.75l8.92 8.92 1.42-1.42 1.41 1.41-2.67 2.67 3.12 3.12c.4.4.4 1.03.01 1.42Z"/></svg>
-
-    </a>
-    <label class="md-header__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
-    </label>
-    <div class="md-header__title" data-md-component="header-title">
-      <div class="md-header__ellipsis">
-        <div class="md-header__topic">
-          <span class="md-ellipsis">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="Grim Docs" class="md-header__button md-logo" data-md-component="logo" href=".." title="Grim Docs">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.92 5H5l9 9 1-.94m4.96 6.06-.84.84a.996.996 0 0 1-1.41 0l-3.12-3.12-2.68 2.66-1.41-1.41 1.42-1.42L3 7.75V3h4.75l8.92 8.92 1.42-1.42 1.41 1.41-2.67 2.67 3.12 3.12c.4.4.4 1.03.01 1.42Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
             Grim Docs
           </span>
-        </div>
-        <div class="md-header__topic" data-md-component="header-topic">
-          <span class="md-ellipsis">
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
             
               powbam Edit NPC Name
             
           </span>
-        </div>
-      </div>
-    </div>
-    
-      <form class="md-header__option" data-md-component="palette">
-        
-          
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="amber"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
-          
-            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
-            </label>
-          
-        
-          
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="amber"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
-          
-            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
-            </label>
-          
-        
-      </form>
-    
-    
-    
-      <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
-          </a>
-        
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
-        </button>
-      </nav>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
-    
-    
-      <div class="md-header__source">
-        <a href="https://github.com/AirTechWick/grim-docs" title="Go to repository" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
-  </div>
-  <div class="md-source__repository">
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="amber" data-md-color-media="" data-md-color-primary="red" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="amber" data-md-color-media="" data-md-color-primary="red" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"></path></svg>
+</label>
+</form>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/AirTechWick/grim-docs" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"></path></svg>
+</div>
+<div class="md-source__repository">
     AirTechWick/grim-docs
   </div>
 </a>
-      </div>
-    
-  </nav>
-  
+</div>
+</nav>
 </header>
-    
-    <div class="md-container" data-md-component="container">
-      
-      
-        
-          
-        
-      
-      <main class="md-main" data-md-component="main">
-        <div class="md-main__inner md-grid">
-          
-            
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
-  <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Grim Docs" class="md-nav__button md-logo" aria-label="Grim Docs" data-md-component="logo">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.92 5H5l9 9 1-.94m4.96 6.06-.84.84a.996.996 0 0 1-1.41 0l-3.12-3.12-2.68 2.66-1.41-1.41 1.42-1.42L3 7.75V3h4.75l8.92 8.92 1.42-1.42 1.41 1.41-2.67 2.67 3.12 3.12c.4.4.4 1.03.01 1.42Z"/></svg>
-
-    </a>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Grim Docs" class="md-nav__button md-logo" data-md-component="logo" href=".." title="Grim Docs">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.92 5H5l9 9 1-.94m4.96 6.06-.84.84a.996.996 0 0 1-1.41 0l-3.12-3.12-2.68 2.66-1.41-1.41 1.42-1.42L3 7.75V3h4.75l8.92 8.92 1.42-1.42 1.41 1.41-2.67 2.67 3.12 3.12c.4.4.4 1.03.01 1.42Z"></path></svg>
+</a>
     Grim Docs
   </label>
-  
-    <div class="md-nav__source">
-      <a href="https://github.com/AirTechWick/grim-docs" title="Go to repository" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
-  </div>
-  <div class="md-source__repository">
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/AirTechWick/grim-docs" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"></path></svg>
+</div>
+<div class="md-source__repository">
     AirTechWick/grim-docs
   </div>
 </a>
-    </div>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="..">
         Home
       </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../about/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../about/">
         About
       </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../crate-pdf-guide/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../crate-pdf-guide/">
         Official PDF Guide
       </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../import-single-record/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../import-single-record/">
         Editing a Base Game Item
       </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-    
-  
-  
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-      
-      
-      
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
-      
-      
-      
-        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
           Edit NPCs Name
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
-        <label class="md-nav__title" for="__nav_5">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
           Edit NPCs Name
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
           powbam Edit NPC Name
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
         powbam Edit NPC Name
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-navigate-to-gds-root-installation-folder" class="md-nav__link">
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1-navigate-to-gds-root-installation-folder">
     1. Navigate to GD’s root installation folder.
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#2-scroll-down-and-selecthighlight-archivetoolexe" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2-scroll-down-and-selecthighlight-archivetoolexe">
     2. Scroll down and select/highlight ArchiveTool.exe
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#3-enter-the-resources-folder" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3-enter-the-resources-folder">
     3. Enter the resources folder.
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#4-right-click-an-empty-spot-in-the-folder-and-call-up-powershell" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#4-right-click-an-empty-spot-in-the-folder-and-call-up-powershell">
     4. Right-click an empty spot in the folder and call up Powershell.
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#5-extract-contents" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#5-extract-contents">
     5. Extract Contents
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#6-now-for-the-actual-edits-first-enter-the-text_en-folder" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#6-now-for-the-actual-edits-first-enter-the-text_en-folder">
     6. Now for the actual edits. First, enter the text_en folder…
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#7-go-back" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#7-go-back">
     7. Go Back
   </a>
-  
 </li>
-      
-    </ul>
-  
+</ul>
 </nav>
-      
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../denis-edit-name/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../denis-edit-name/">
         Denis Edit Name Lite
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-      
-      
-        
-      
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
-      
-      
-      
-        <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
           Hard Modding
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_6">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
           Hard Modding
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../van-hard-mod/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../van-hard-mod/">
         VanH Hard Mod Tutorial
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../tqfan-hard-mod/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tqfan-hard-mod/">
         tqFan Hard Mod Tutorial
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-      
-      
-        
-      
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
-      
-      
-      
-        <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
           Base Game Tools
           <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_7">
-          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
+<span class="md-nav__icon md-icon"></span>
           Base Game Tools
         </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../mod-tools/" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../mod-tools/">
         Modding Tools
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../modpacks/" class="md-nav__link">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../modpacks/">
         Modpacks
       </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../template-page/" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../template-page/">
         Add Page [ + ]
       </a>
-    </li>
-  
-
-    
-  </ul>
+</li>
+</ul>
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-navigate-to-gds-root-installation-folder" class="md-nav__link">
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1-navigate-to-gds-root-installation-folder">
     1. Navigate to GD’s root installation folder.
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#2-scroll-down-and-selecthighlight-archivetoolexe" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2-scroll-down-and-selecthighlight-archivetoolexe">
     2. Scroll down and select/highlight ArchiveTool.exe
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#3-enter-the-resources-folder" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3-enter-the-resources-folder">
     3. Enter the resources folder.
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#4-right-click-an-empty-spot-in-the-folder-and-call-up-powershell" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#4-right-click-an-empty-spot-in-the-folder-and-call-up-powershell">
     4. Right-click an empty spot in the folder and call up Powershell.
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#5-extract-contents" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#5-extract-contents">
     5. Extract Contents
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#6-now-for-the-actual-edits-first-enter-the-text_en-folder" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#6-now-for-the-actual-edits-first-enter-the-text_en-folder">
     6. Now for the actual edits. First, enter the text_en folder…
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#7-go-back" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#7-go-back">
     7. Go Back
   </a>
-  
 </li>
-      
-    </ul>
-  
+</ul>
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-          
-          
-            <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset">
-                
-                  
-
-  
-    <a href="https://github.com/AirTechWick/grim-docs/edit/main/docs/powbam-edit-name.md" title="Edit this page" class="md-content__button md-icon">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.7 7c.4-.4.4-1 0-1.4l-2.3-2.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L19 8.9M3 17.2V21h3.8l11-11.1-3.7-3.8L3 17.2M7 2v3h3v2H7v3H5V7H2V5h3V2h2Z"/></svg>
-    </a>
-  
-  
-
-
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<a class="md-content__button md-icon" href="https://github.com/AirTechWick/grim-docs/edit/main/docs/powbam-edit-name.md" title="Edit this page">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.7 7c.4-.4.4-1 0-1.4l-2.3-2.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L19 8.9M3 17.2V21h3.8l11-11.1-3.7-3.8L3 17.2M7 2v3h3v2H7v3H5V7H2V5h3V2h2Z"></path></svg>
+</a>
 <h1 id="how-to-edit-npc-names">How-To Edit NPC Names</h1>
 <p>Author: <a href="https://forums.crateentertainment.com/u/powbam">powbam</a></p>
 <h2 id="1-navigate-to-gds-root-installation-folder">1. Navigate to GD’s root installation folder.</h2>
-<p><img alt="scr1" src="https://forums.crateentertainment.com/uploads/default/original/3X/0/c/0c6c1115564077f687c6805775e9e86cd898b5fa.png" /></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="https://forums.crateentertainment.com/uploads/default/original/3X/0/c/0c6c1115564077f687c6805775e9e86cd898b5fa.png"><img alt="scr1" src="https://forums.crateentertainment.com/uploads/default/original/3X/0/c/0c6c1115564077f687c6805775e9e86cd898b5fa.png"/></a></p>
 <p>Mine’s on my D:\ drive but default path (for Steam) is:
 <code>C:\Program Files (x86)\Steam\steamapps\common\Grim Dawn</code></p>
 <h2 id="2-scroll-down-and-selecthighlight-archivetoolexe">2. Scroll down and select/highlight ArchiveTool.exe</h2>
 <p>then find zlibwapi.dll , hold down the Ctrl key, and select it as well so that both are selected. Now hit Ctrl+C to copy them both into system memory.</p>
 <h2 id="3-enter-the-resources-folder">3. Enter the resources folder.</h2>
 <p>Press Ctrl+V to paste both files here.</p>
-<p><img alt="scr2" src="https://forums.crateentertainment.com/uploads/default/original/3X/c/b/cbbc3b9ec8204827ad63d7479ecd71b7111f3b41.png" /></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="https://forums.crateentertainment.com/uploads/default/original/3X/c/b/cbbc3b9ec8204827ad63d7479ecd71b7111f3b41.png"><img alt="scr2" src="https://forums.crateentertainment.com/uploads/default/original/3X/c/b/cbbc3b9ec8204827ad63d7479ecd71b7111f3b41.png"/></a></p>
 <h2 id="4-right-click-an-empty-spot-in-the-folder-and-call-up-powershell">4. Right-click an empty spot in the folder and call up Powershell.</h2>
-<p><img alt="scr3" src="https://forums.crateentertainment.com/uploads/default/original/3X/0/0/00128e81304a5523a60558eb72fa34b06a590430.png" /></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="https://forums.crateentertainment.com/uploads/default/original/3X/0/0/00128e81304a5523a60558eb72fa34b06a590430.png"><img alt="scr3" src="https://forums.crateentertainment.com/uploads/default/original/3X/0/0/00128e81304a5523a60558eb72fa34b06a590430.png"/></a></p>
 <h2 id="5-extract-contents">5. Extract Contents</h2>
 <p>From here we are going to tell <code>ArchiveTool.exe</code> to extract the contents of <code>Text_EN.arc</code> and <code>Conversations.arc</code>…</p>
-<p><img alt="scr4" src="https://forums.crateentertainment.com/uploads/default/original/3X/3/3/33199df987f303b0749b4b36db2c4dbf31fbb080.png" /></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="https://forums.crateentertainment.com/uploads/default/original/3X/3/3/33199df987f303b0749b4b36db2c4dbf31fbb080.png"><img alt="scr4" src="https://forums.crateentertainment.com/uploads/default/original/3X/3/3/33199df987f303b0749b4b36db2c4dbf31fbb080.png"/></a></p>
 <p>Just copy and paste the block of text below. Ensure that the paths are the same as yours.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>.\ArchiveTool.exe &quot;C:\Program Files (x86)\Steam\steamapps\common\Grim Dawn\resources\Text_EN.arc&quot; -extract &quot;C:\Program Files (x86)\Steam\steamapps\common\Grim Dawn\resources&quot;; .\ArchiveTool.exe &quot;C:\Program Files (x86)\Steam\steamapps\common\Grim Dawn\resources\Conversations.arc&quot; -extract &quot;C:\Program Files (x86)\Steam\steamapps\common\Grim Dawn\resources&quot;
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>.\ArchiveTool.exe "C:\Program Files (x86)\Steam\steamapps\common\Grim Dawn\resources\Text_EN.arc" -extract "C:\Program Files (x86)\Steam\steamapps\common\Grim Dawn\resources"; .\ArchiveTool.exe "C:\Program Files (x86)\Steam\steamapps\common\Grim Dawn\resources\Conversations.arc" -extract "C:\Program Files (x86)\Steam\steamapps\common\Grim Dawn\resources"
 </span></code></pre></div>
 <p>If everything is right Powershell should quickly spit out a bunch of text in sequence and you will have two new folders occupying the directory.</p>
-<p><img alt="scr5" src="https://forums.crateentertainment.com/uploads/default/original/3X/6/0/60eb296c7418b5a038fd9695704f9e15f6923239.png" /></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="https://forums.crateentertainment.com/uploads/default/original/3X/6/0/60eb296c7418b5a038fd9695704f9e15f6923239.png"><img alt="scr5" src="https://forums.crateentertainment.com/uploads/default/original/3X/6/0/60eb296c7418b5a038fd9695704f9e15f6923239.png"/></a></p>
 <h2 id="6-now-for-the-actual-edits-first-enter-the-text_en-folder">6. Now for the actual edits. First, enter the <code>text_en</code> folder…</h2>
-<p><img alt="scr6" src="https://forums.crateentertainment.com/uploads/default/original/3X/d/f/df18ef3c9a63b47e7b6c39239075ffc4d8536f71.png" /></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="https://forums.crateentertainment.com/uploads/default/original/3X/d/f/df18ef3c9a63b47e7b6c39239075ffc4d8536f71.png"><img alt="scr6" src="https://forums.crateentertainment.com/uploads/default/original/3X/d/f/df18ef3c9a63b47e7b6c39239075ffc4d8536f71.png"/></a></p>
 <p>…and copy the <code>tags_storyelements.txt</code> file from here then navigate to Grim Dawn’s <code>Settings</code> folder in it’s local saving location:</p>
 <p><code>C:\Users\YOUR_USERNAME\Documents\My Games\Grim Dawn\Settings</code></p>
 <p>Create a new folder here and name it <code>text_en</code> and then paste your copied text file inside of it.</p>
-<p><img alt="scr7" src="https://forums.crateentertainment.com/uploads/default/original/3X/8/6/86cbc72e5b041f31b74970a57c3c8cb084e61768.png" /></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="https://forums.crateentertainment.com/uploads/default/original/3X/8/6/86cbc72e5b041f31b74970a57c3c8cb084e61768.png"><img alt="scr7" src="https://forums.crateentertainment.com/uploads/default/original/3X/8/6/86cbc72e5b041f31b74970a57c3c8cb084e61768.png"/></a></p>
 <p>Open it up to edit it and scroll down a bit to the #NPC Names section.</p>
-<p><img alt="scr8" src="https://forums.crateentertainment.com/uploads/default/original/3X/b/b/bba1fdca00bb6e1aaf48f72bb16970a9f89d8515.png" /></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="https://forums.crateentertainment.com/uploads/default/original/3X/b/b/bba1fdca00bb6e1aaf48f72bb16970a9f89d8515.png"><img alt="scr8" src="https://forums.crateentertainment.com/uploads/default/original/3X/b/b/bba1fdca00bb6e1aaf48f72bb16970a9f89d8515.png"/></a></p>
 <p>Comment out John Bourbon’s tag with a # sign but copy the text and paste it on the line below it. Lets call him Cap’n Crunch instead. Save the file and fire the game up and go talk to Cap’n Crunch.</p>
-<p><img alt="scr9" src="https://forums.crateentertainment.com/uploads/default/original/3X/8/7/87e5d35d0ad89cbb0613b6360b3e6142a29f1456.jpeg" /></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="https://forums.crateentertainment.com/uploads/default/original/3X/8/7/87e5d35d0ad89cbb0613b6360b3e6142a29f1456.jpeg"><img alt="scr9" src="https://forums.crateentertainment.com/uploads/default/original/3X/8/7/87e5d35d0ad89cbb0613b6360b3e6142a29f1456.jpeg"/></a></p>
 <p>We managed to change his name that shows when you hover your mouse on him but his conversation window still retains the original name.</p>
 <h2 id="7-go-back">7. Go Back</h2>
 <p>Which brings us to the last bit that needs to be done. Go back to where you extracted files at earlier and enter the <code>conversations</code> folder you extracted there. See the file named <code>npc_johnbourbon_reversetest_01.cnv</code>? That’s your next target…</p>
-<p><img alt="scr10" src="https://forums.crateentertainment.com/uploads/default/original/3X/c/a/ca9f2ab076a38f927be9d1398c559999dec8b2b4.png" /></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="https://forums.crateentertainment.com/uploads/default/original/3X/c/a/ca9f2ab076a38f927be9d1398c559999dec8b2b4.png"><img alt="scr10" src="https://forums.crateentertainment.com/uploads/default/original/3X/c/a/ca9f2ab076a38f927be9d1398c559999dec8b2b4.png"/></a></p>
 <p>…but first you need to go back two directories to GD’s root install directory…</p>
-<p><img alt="scr11" src="https://forums.crateentertainment.com/uploads/default/original/3X/1/b/1bebdda51b8e5b7491755576962709f9c7035248.png" /></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="https://forums.crateentertainment.com/uploads/default/original/3X/1/b/1bebdda51b8e5b7491755576962709f9c7035248.png"><img alt="scr11" src="https://forums.crateentertainment.com/uploads/default/original/3X/1/b/1bebdda51b8e5b7491755576962709f9c7035248.png"/></a></p>
 <p>…and launch the <code>ConversationEditor.exe</code> located there. It will ask you for a <code>Working Directory</code> and a <code>Build Directory</code> on first launch. You can just give it the root install folder in both cases but for our purposes it really doesn’t matter.</p>
 <p>Click the little <code>Open</code> button and feed it the above mentioned <code>npc_johnbourbon_reversetest_01.cnv</code> file I mentioned just before.</p>
-<p><img alt="scr12" src="https://forums.crateentertainment.com/uploads/default/original/3X/a/f/af4fa2e98185b0ba915022d7617322d14820cc11.png" /></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="https://forums.crateentertainment.com/uploads/default/original/3X/a/f/af4fa2e98185b0ba915022d7617322d14820cc11.png"><img alt="scr12" src="https://forums.crateentertainment.com/uploads/default/original/3X/a/f/af4fa2e98185b0ba915022d7617322d14820cc11.png"/></a></p>
 <p>When it loads click and highlight where it says <code>John Bourbon</code> near the top so you can edit the name in the Text Editor down below it. Change that to Cap’n Crunch…</p>
-<p><img alt="scr13" src="https://forums.crateentertainment.com/uploads/default/original/3X/0/c/0c0a972f430f48f3ad5fdf9d791d4c8164331831.png" /></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="https://forums.crateentertainment.com/uploads/default/original/3X/0/c/0c0a972f430f48f3ad5fdf9d791d4c8164331831.png"><img alt="scr13" src="https://forums.crateentertainment.com/uploads/default/original/3X/0/c/0c0a972f430f48f3ad5fdf9d791d4c8164331831.png"/></a></p>
 <p>…then simply press the ‘Save’ button and close the <code>ConversationEditor</code>.</p>
-<p><img alt="scr14" src="https://forums.crateentertainment.com/uploads/default/original/3X/a/7/a77c04b81a0ee5b8d901fd16180c2d1a46ac96cc.png" /></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="https://forums.crateentertainment.com/uploads/default/original/3X/a/7/a77c04b81a0ee5b8d901fd16180c2d1a46ac96cc.png"><img alt="scr14" src="https://forums.crateentertainment.com/uploads/default/original/3X/a/7/a77c04b81a0ee5b8d901fd16180c2d1a46ac96cc.png"/></a></p>
 <p>Now go copy your freshly edited <code>npc_johnbourbon_reversetest_01.cnv</code> file and head on back to GD’s <code>Settings</code> folder again and create another new folder in it and name it conversations and paste your file into it.</p>
-<p><img alt="scr15" src="https://forums.crateentertainment.com/uploads/default/original/3X/9/b/9b77f09b6a8d689650eca580310790d2013dd34d.png" /></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="https://forums.crateentertainment.com/uploads/default/original/3X/9/b/9b77f09b6a8d689650eca580310790d2013dd34d.png"><img alt="scr15" src="https://forums.crateentertainment.com/uploads/default/original/3X/9/b/9b77f09b6a8d689650eca580310790d2013dd34d.png"/></a></p>
 <p>Fire up the game and head back to have a chat with Ye Olde Cap’n Crunch again.</p>
-<p><img alt="scr16" src="https://forums.crateentertainment.com/uploads/default/original/3X/b/c/bc7e08d2f1ea5b147a06f55b3dd3c60ac1532788.jpeg" /></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="https://forums.crateentertainment.com/uploads/default/original/3X/b/c/bc7e08d2f1ea5b147a06f55b3dd3c60ac1532788.jpeg"><img alt="scr16" src="https://forums.crateentertainment.com/uploads/default/original/3X/b/c/bc7e08d2f1ea5b147a06f55b3dd3c60ac1532788.jpeg"/></a></p>
 <p>Wow. You did it champ.</p>
 <p>You can now either delete your folders you extracted or hold on to 'em if ya wanna poke around some more. Keep in mind that NPC’s like Bourbon get their name tossed around in a number of other conversation (.cnv) files, so if ya wanna be technical with it you still might have a leeeetle bit more work to do. But now you’re on your way.</p>
-
-
-
-
-
-  <h2 id="__comments">Comments</h2>
-  <!-- Insert generated snippet here -->
-  <script src="https://giscus.app/client.js"
-    data-repo="AirTechWick/grim-docs"
-    data-repo-id="R_kgDOJTy2mA"
-    data-category="Announcements"
-    data-category-id="DIC_kwDOJTy2mM4CVm9P"
-    data-mapping="pathname"
-    data-strict="0"
-    data-reactions-enabled="1"
-    data-emit-metadata="0"
-    data-input-position="top"
-    data-theme="dark"
-    data-lang="en"
-    data-loading="lazy"
-    crossorigin="anonymous"
-    async>
-  </script>
-  <!-- Synchronize Giscus theme with palette -->
-  <script>
+<h2 id="__comments">Comments</h2>
+<!-- Insert generated snippet here -->
+<script async="" crossorigin="anonymous" data-category="Announcements" data-category-id="DIC_kwDOJTy2mM4CVm9P" data-emit-metadata="0" data-input-position="top" data-lang="en" data-loading="lazy" data-mapping="pathname" data-reactions-enabled="1" data-repo="AirTechWick/grim-docs" data-repo-id="R_kgDOJTy2mA" data-strict="0" data-theme="dark" src="https://giscus.app/client.js">
+</script>
+<!-- Synchronize Giscus theme with palette -->
+<script>
     var giscus = document.querySelector("script[src*=giscus]")
 
     /* Set palette on initial load */
@@ -786,87 +400,61 @@
       })
     })
   </script>
-
-                
-              </article>
-            </div>
-          
-          
-        </div>
-        
-          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+</article>
+</div>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"></path></svg>
             Back to top
           </button>
-        
-      </main>
-      
-        <footer class="md-footer">
-  
-    
-      
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
-        
-          
-          <a href="../import-single-record/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Editing a Base Game Item" rel="prev">
-            <div class="md-footer__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-            </div>
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: Editing a Base Game Item" class="md-footer__link md-footer__link--prev" href="../import-single-record/" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
                 Previous
               </span>
-              <div class="md-ellipsis">
+<div class="md-ellipsis">
                 Editing a Base Game Item
               </div>
-            </div>
-          </a>
-        
-        
-          
-          <a href="../denis-edit-name/" class="md-footer__link md-footer__link--next" aria-label="Next: Denis Edit Name Lite" rel="next">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
+</div>
+</a>
+<a aria-label="Next: Denis Edit Name Lite" class="md-footer__link md-footer__link--next" href="../denis-edit-name/" rel="next">
+<div class="md-footer__title">
+<span class="md-footer__direction">
                 Next
               </span>
-              <div class="md-ellipsis">
+<div class="md-ellipsis">
                 Denis Edit Name Lite
               </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
   
   
     Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
       Material for MkDocs
     </a>
-  
 </div>
-      
-    </div>
-  </div>
+</div>
+</div>
 </footer>
-      
-    </div>
-    <div class="md-dialog" data-md-component="dialog">
-      <div class="md-dialog__inner md-typeset"></div>
-    </div>
-    
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tracking", "navigation.expand", "navigation.top", "search.share", "navigation.footer", "content.action.edit", "content.code.copy"], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
-    
-    
-      <script src="../assets/javascripts/bundle.407015b8.min.js"></script>
-      
-    
-  </body>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "..", "features": ["navigation.tracking", "navigation.expand", "navigation.top", "search.share", "navigation.footer", "content.action.edit", "content.code.copy"], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../assets/javascripts/bundle.51198bba.min.js"></script>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>
