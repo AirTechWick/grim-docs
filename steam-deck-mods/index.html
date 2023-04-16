@@ -5,9 +5,11 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../tqfan-hard-mod/" rel="prev"/>
+<link href="../modpacks/" rel="next"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.4.2, mkdocs-material-9.1.6" name="generator"/>
-<title>Steam deck mods - Grim Docs</title>
+<title>Mods on Steamdeck - Grim Docs</title>
 <link href="../assets/stylesheets/main.ded33207.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.a0c5b2b5.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -32,6 +34,9 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
+<a class="md-skip" href="#how-to-get-grim-dawn-mods-on-steam-deck-linux">
+          Skip to content
+        </a>
 </div>
 <div data-md-component="announce">
 </div>
@@ -53,7 +58,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Steam deck mods
+              Mods on Steamdeck
             
           </span>
 </div>
@@ -175,10 +180,43 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../template-page/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Mods on Steamdeck
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
         Mods on Steamdeck
       </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#griminternals">
+    GrimInternals
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#item-color-filter">
+    Item Color Filter
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#gditemassistant">
+    GDItemAssistant
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#gdstash">
+    GDStash
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../modpacks/">
@@ -199,6 +237,32 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#griminternals">
+    GrimInternals
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#item-color-filter">
+    Item Color Filter
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#gditemassistant">
+    GDItemAssistant
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#gdstash">
+    GDStash
+  </a>
+</li>
+</ul>
 </nav>
 </div>
 </div>
@@ -208,7 +272,83 @@
 <a class="md-content__button md-icon" href="https://github.com/AirTechWick/grim-docs/edit/main/docs/steam-deck-mods.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.7 7c.4-.4.4-1 0-1.4l-2.3-2.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L19 8.9M3 17.2V21h3.8l11-11.1-3.7-3.8L3 17.2M7 2v3h3v2H7v3H5V7H2V5h3V2h2Z"></path></svg>
 </a>
-<h1>Steam deck mods</h1>
+<h1 id="how-to-get-grim-dawn-mods-on-steam-deck-linux">How to get Grim Dawn Mods on Steam Deck Linux</h1>
+<p>Author: <a href="https://github.com/scottc">scottc</a></p>
+<p>Popular unofficial Grim Dawn community mods. (Not steam workshop)</p>
+<p>DISCLAIMER: I am not the author of these mods. Use at your own risk, no warranty provided, may destroy your save games, may cause data loss, get your steam account stolen, permanently banned, damage to hardware or personal injury.</p>
+<p>At time of writing this post:</p>
+<h2 id="griminternals">GrimInternals</h2>
+<ol>
+<li>
+<p>Download <a href="http://www.grimdawn.com/forums/showthread.php?t=53629">GrimInternals</a>.</p>
+</li>
+<li>
+<p>Extract GrimInternals, as per the windows instructions.<br/>
+    (Typically; <code>"/home/__YOUR_USER__/.local/share/Steam/steamapps/common/Grim Dawn"</code>)</p>
+</li>
+</ol>
+<blockquote>
+<p>OK, I got it working tonight. For me, I had to make sure GrimInternals64.exe and GrimInternalsDll64.exe were located directly in my Grim Dawn folder. Having them in the x64 folder simply would not work.</p>
+</blockquote>
+<p><a href="https://github.com/SherrifsNear">@SherrifsNear</a> <a href="https://github.com/ValveSoftware/Proton/issues/466#issuecomment-503800017">#466 (comment)</a></p>
+<ol>
+<li>
+<p>Can dump the proton run command via adding launch options to Grim Dawn:<br/>
+    Properties &gt; SET LAUNCH OPTIONS...<br/>
+<code>PROTON_DUMP_DEBUG_COMMANDS=1 %command%</code></p>
+</li>
+<li>
+<p>Run and then exit Grim Dawn.</p>
+</li>
+<li>
+<p>Make a copy of the dumped run command, to home directory:<br/>
+<code>cp "/tmp/proton_$USER/run" "$HOME/run_grim_dawn.sh"</code></p>
+</li>
+<li>
+<p>Edit <code>$HOME/run_grim_dawn.sh</code> with text editor, and modify the <code>DEF_CMD</code> var file path to point at GrimInternals. And any other customizations as you see fit.</p>
+</li>
+</ol>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>cd "/home/__YOUR_USER__/.local/share/Steam/steamapps/common/Grim Dawn"
+</span><span id="__span-0-2"><a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>DEF_CMD=("/home/__YOUR_USER__/.local/share/Steam/steamapps/common/Grim Dawn/GrimInternals64.exe")
+</span></code></pre></div>
+<p><strong>Note:</strong> I also explicitly have the version of proton installed, under Library &gt; Tools. Which appears under <code>$HOME/.local/share/Steam/steamapps/common/Proton __VERSION__/</code></p>
+<ol>
+<li>
+<p>Make it executable:<br/>
+<code>chmod +x ~/run_grim_dawn.sh</code></p>
+</li>
+<li>
+<p>Run it:</p>
+</li>
+</ol>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>cd ~
+</span><span id="__span-1-2"><a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a>./run_grim_dawn.sh
+</span></code></pre></div>
+<p>If it fails to run, you can remove this line from the run command, to get errors printed to the console. To help troubleshoot. But comes with a small performance penalty.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>WINEDEBUG="-all" \
+</span></code></pre></div>
+<p>Should also be able to add it as a Non-Steam game shortcut.</p>
+<h2 id="item-color-filter">Item Color Filter</h2>
+<ol>
+<li>Download <a href="http://www.grimdawn.com/forums/showthread.php?t=63773&amp;page=15#post718407">Item Color Filter</a> and check that you have the latest version.<br/>
+    (outdated versions may break in-game text descriptions)</li>
+<li>Extract the Item Color Filter, as per the windows instructions.<br/>
+    (Typically; <code>"/home/__YOUR_USER__/.local/share/Steam/steamapps/common/Grim Dawn"</code>)</li>
+<li>Play Grim Dawn.</li>
+<li>Manually update after each Grim Dawn release.</li>
+</ol>
+<h2 id="gditemassistant">GDItemAssistant</h2>
+<p>I haven't had any luck with <a href="http://www.grimdawn.com/forums/showthread.php?t=35240">GDItemAssistant</a> which depends on dll injection.</p>
+<h2 id="gdstash">GDStash</h2>
+<p>As per <a href="https://github.com/lieff">@lieff</a> 's comments below:<br/>
+<a href="https://github.com/ValveSoftware/Proton/issues/466#issuecomment-483631990">#466 (comment)</a></p>
+<blockquote>
+<p><code>java -Xms1024m -Xmx1024m -jar GDStash.jar</code></p>
+</blockquote>
+<p>You can also put this in a shell script (<code>.sh</code>) file with executable permissions <code>chmod +x</code>, and then add to steam library for convenience.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a>#!/bin/sh
+</span><span id="__span-3-2"><a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a>java -Xms1024m -Xmx1024m -jar GDStash.jar
+</span></code></pre></div>
 </article>
 </div>
 </div>
@@ -218,6 +358,34 @@
           </button>
 </main>
 <footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: tqFan Hard Mod Tutorial" class="md-footer__link md-footer__link--prev" href="../tqfan-hard-mod/" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Previous
+              </span>
+<div class="md-ellipsis">
+                tqFan Hard Mod Tutorial
+              </div>
+</div>
+</a>
+<a aria-label="Next: Modpacks" class="md-footer__link md-footer__link--next" href="../modpacks/" rel="next">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Next
+              </span>
+<div class="md-ellipsis">
+                Modpacks
+              </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
 <div class="md-footer-meta md-typeset">
 <div class="md-footer-meta__inner md-grid">
 <div class="md-copyright">
