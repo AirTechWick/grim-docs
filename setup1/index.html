@@ -1,0 +1,634 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../about/" rel="prev"/>
+<link href="../setup2/" rel="next"/>
+<link href="../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-9.1.6" name="generator"/>
+<title>Setup Guide 1 - Grim Docs</title>
+<link href="../assets/stylesheets/main.ded33207.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.a0c5b2b5.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            
+                .gscrollbar-fixer { padding-right: 15px; }
+                .gdesc-inner { font-size: 0.75rem; }
+                body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+                body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+                body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+                </style><script src="../assets/javascripts/glightbox.min.js"></script></head>
+<body data-md-color-accent="amber" data-md-color-primary="red" data-md-color-scheme="default" dir="ltr">
+<script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#modding-setup-1">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="Grim Docs" class="md-header__button md-logo" data-md-component="logo" href=".." title="Grim Docs">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.92 5H5l9 9 1-.94m4.96 6.06-.84.84a.996.996 0 0 1-1.41 0l-3.12-3.12-2.68 2.66-1.41-1.41 1.42-1.42L3 7.75V3h4.75l8.92 8.92 1.42-1.42 1.41 1.41-2.67 2.67 3.12 3.12c.4.4.4 1.03.01 1.42Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Grim Docs
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Setup Guide 1
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="amber" data-md-color-media="" data-md-color-primary="red" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="amber" data-md-color-media="" data-md-color-primary="red" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"></path></svg>
+</label>
+</form>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<a aria-label="Share" class="md-search__icon md-icon" data-clipboard="" data-clipboard-text="" data-md-component="search-share" href="javascript:void(0)" tabindex="-1" title="Share">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"></path></svg>
+</a>
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/AirTechWick/grim-docs" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"></path></svg>
+</div>
+<div class="md-source__repository">
+    AirTechWick/grim-docs
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Grim Docs" class="md-nav__button md-logo" data-md-component="logo" href=".." title="Grim Docs">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.92 5H5l9 9 1-.94m4.96 6.06-.84.84a.996.996 0 0 1-1.41 0l-3.12-3.12-2.68 2.66-1.41-1.41 1.42-1.42L3 7.75V3h4.75l8.92 8.92 1.42-1.42 1.41 1.41-2.67 2.67 3.12 3.12c.4.4.4 1.03.01 1.42Z"></path></svg>
+</a>
+    Grim Docs
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/AirTechWick/grim-docs" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"></path></svg>
+</div>
+<div class="md-source__repository">
+    AirTechWick/grim-docs
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="..">
+        Home
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../about/">
+        About
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Modding Setup
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          Modding Setup
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Setup Guide 1
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Setup Guide 1
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#10-preparation">
+    1.0 Preparation
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#11-tools-overview">
+    1.1 Tools Overview
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#111-asset-manager">
+    1.1.1 Asset Manager
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#112-world-editor">
+    1.1.2 World Editor
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#113-quest-editor">
+    1.1.3 Quest Editor
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#114-conversation-editor">
+    1.1.4 Conversation Editor
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#115-pseditor">
+    1.1.5 PSEditor
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#12-preparation">
+    1.2 Preparation
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#121-foreword-timesaver">
+    1.2.1 Foreword - Timesaver
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#122-foreword-ii-mod-types">
+    1.2.2 Foreword II - Mod Types
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#123-setting-up-asset-manager">
+    1.2.3 Setting Up Asset Manager
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../setup2/">
+        Setup Guide 2
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../import-single-record/">
+        Editing a Base Game Item
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          Edit NPCs Name
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+          Edit NPCs Name
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../powbam-edit-name/">
+        powbam Edit NPC Name
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../denis-edit-name/">
+        Denis Edit Name Lite
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          Hard Modding
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+          Hard Modding
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../van-hard-mod/">
+        VanH Hard Mod Tutorial
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tqfan-hard-mod/">
+        tqFan Hard Mod Tutorial
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../steam-deck-mods/">
+        Mods on Steamdeck
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../modpacks/">
+        Modpacks
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../crate-pdf-guide/">
+        Official PDF Guide
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../template-page/">
+        Add Page [ + ]
+      </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#10-preparation">
+    1.0 Preparation
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#11-tools-overview">
+    1.1 Tools Overview
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#111-asset-manager">
+    1.1.1 Asset Manager
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#112-world-editor">
+    1.1.2 World Editor
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#113-quest-editor">
+    1.1.3 Quest Editor
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#114-conversation-editor">
+    1.1.4 Conversation Editor
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#115-pseditor">
+    1.1.5 PSEditor
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#12-preparation">
+    1.2 Preparation
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#121-foreword-timesaver">
+    1.2.1 Foreword - Timesaver
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#122-foreword-ii-mod-types">
+    1.2.2 Foreword II - Mod Types
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#123-setting-up-asset-manager">
+    1.2.3 Setting Up Asset Manager
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<a class="md-content__button md-icon" href="https://github.com/AirTechWick/grim-docs/edit/main/docs/setup1.md" title="Edit this page">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.7 7c.4-.4.4-1 0-1.4l-2.3-2.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L19 8.9M3 17.2V21h3.8l11-11.1-3.7-3.8L3 17.2M7 2v3h3v2H7v3H5V7H2V5h3V2h2Z"></path></svg>
+</a>
+<h1 id="modding-setup-1">Modding Setup 1</h1>
+<p>Author: <a href="https://forums.crateentertainment.com/u/Elfe">Elfe</a></p>
+<p>Summary:<br/>
+This tutorial scopes with the setup and a basic overview of the most relevant modding tools. It therefore shows how to setup the Asset Manager properly and a further part explains how to create your first mod.</p>
+<p>Parts Index</p>
+<ol>
+<li>Modding Beginner’s Guide I</li>
+<li><a href="https://forums.crateentertainment.com/t/script-basics-modding-beginners-guide-ii/37526">Modding Beginner’s Guide II 1.2k</a></li>
+<li>Modding Beginner’s Guide III (yet to come)</li>
+</ol>
+<p>Index</p>
+<blockquote>
+<p>1.0 Preparation</p>
+<blockquote>
+<p>1.1 Tools Overview</p>
+<blockquote>
+<p>1.1.1 Asset Manager<br/>
+1.1.2 World Editor<br/>
+1.1.3 Quest Editor<br/>
+1.1.4 Conversation Editor<br/>
+1.1.5 PSEditor</p>
+</blockquote>
+<p>1.2 Prepartion</p>
+<blockquote>
+<p>1.2.1 Foreword - Timesaver<br/>
+1.2.2 Foreword II - Mod Types<br/>
+1.2.3 Setting Up Asset Manager</p>
+</blockquote>
+</blockquote>
+<p>2.0 The First Mod</p>
+<blockquote>
+<p>2.1 Normal Mods<br/>
+2.2 Map Mods</p>
+</blockquote>
+</blockquote>
+<h2 id="10-preparation">1.0 Preparation</h2>
+<p>Ready to start modding?<br/>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="https://i.epvpimg.com/GfZ7aab.png"><img alt="meme" src="https://i.epvpimg.com/GfZ7aab.png"/></a><br/>
+(Meme by Ceno &amp; me)</p>
+<p>You sure? <a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="https://forums.crateentertainment.com/images/emoji/twitter/stuck_out_tongue.png?v=10"><img alt=":stuck_out_tongue:" src="https://forums.crateentertainment.com/images/emoji/twitter/stuck_out_tongue.png?v=10" title=":stuck_out_tongue:"/></a></p>
+<p>So I’ve heard there are still crazy people out there wanting to get into modding but have no idea on how to start. If you belong to these persons, this is the right place for you. Besides, this guide might also be useful for some experienced modders, especially in terms of keeping your mods clear/clean.</p>
+<p>To beginn modding Grim Dawn, you first need to prepare a few things to make all the tools work and you also can get some timesavers to make modding faster / more comfortable but more on that later. First I’ll give you a brief overview over the most commonly used modding tools that will be delivered alongside the game automatically.</p>
+<p>Please note that this is a chronologically guide and that I’ll asume you know all previous steps before going on with something as I’m not going to explain the same thing over and over again. I therefore recommend reading the entire guide even thought it might be long, you’ll learn a lot that you otherwise would have missed.</p>
+<p>Also this guide may contain several parts where you will stumble across what I consider “best practise” whereas best practise means working patterns I’ve been using that have proved to be success-leading in terms of archiving goals and keeping your mod clean. All of these are my opinion and not neccessarily objective.</p>
+<h2 id="11-tools-overview">1.1 Tools Overview</h2>
+<h2 id="111-asset-manager">1.1.1 Asset Manager</h2>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="https://i.epvpimg.com/PoIvfab.png"><img alt="" src="https://i.epvpimg.com/PoIvfab.png"/></a></p>
+<p>The Asset Manager is probably the most important modding tool as this is where everything comes together: Adding new <a href="https://forums.crateentertainment.com/t/script-basics-resource-files/32207">resources 195</a>, asset creating / converting, database entry editing and building everything together as the final mod. This is also where we will start to set up your directories to make the tools work.</p>
+<p>Another tool that will be used through this one is the such called DBREditor, which is a text editor basing on templates that will display .dbr (database record) files in a more organized way than simple text editing:</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="https://i.epvpimg.com/4kgoc.png"><img alt="" src="https://i.epvpimg.com/4kgoc.png"/></a></p>
+<h2 id="112-world-editor">1.1.2 World Editor</h2>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="https://i.epvpimg.com/awYSg.png"><img alt="" src="https://i.epvpimg.com/awYSg.png"/></a></p>
+<p>The World Editor is where levels get designed. There are a bunch of tools inside it and a guide to most of them available <a href="https://forums.crateentertainment.com/t/script-learning-world-editor-tools-i/32634">here 66</a> as well as a beginner’s guide to map making by Mirenheart <a href="https://forums.crateentertainment.com/t/simple-map-making-for-dummies/32199">here. 50</a></p>
+<h2 id="113-quest-editor">1.1.3 Quest Editor</h2>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="https://i.epvpimg.com/cbyhc.png"><img alt="" src="https://i.epvpimg.com/cbyhc.png"/></a></p>
+<p>The quest editor is responsible for linking together conversation and scripts to build quests basing on an action-reaction principe.</p>
+<h2 id="114-conversation-editor">1.1.4 Conversation Editor</h2>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="https://i.epvpimg.com/wwPcb.png"><img alt="" src="https://i.epvpimg.com/wwPcb.png"/></a></p>
+<p>The conversation editor is where you build conversation trees. You may notice it’s format is pretty similar to the quest editor which is a result of both working together closely.</p>
+<h2 id="115-pseditor">1.1.5 PSEditor</h2>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="https://i.epvpimg.com/YSSkc.png"><img alt="" src="https://i.epvpimg.com/YSSkc.png"/></a></p>
+<p>The Particle System Editor is where all particle effects are getting created. It works with Emitters and particles and also supports different shaders.</p>
+<h2 id="12-preparation">1.2 Preparation</h2>
+<p>Now that you got a brief idea of what the modding tools look like, we’ll get down to prepare them to begin modding.</p>
+<h2 id="121-foreword-timesaver">1.2.1 Foreword - Timesaver</h2>
+<p>Now this is a collection of tools that will make your life easier by saving you a lot of handwork and time consuming, repetitive actions.</p>
+<p><a href="https://forums.crateentertainment.com/t/tool-grim-dawn-toolwindow/31874">Grim Dawn Toolwindow 176</a></p>
+<p>This is a tool that will save you from opening your Grim Dawn install directory every time you want to start a modding tool by providing shortcuts to all tools, relevant modding directories, a game start shortcut as well as an browser like texture viewer. It also will always clip to the topmost window if it is one of the modding tools so that it will never get lost and be easily accessible.</p>
+<p>Requires the <a href="https://www.microsoft.com/en-US/download/details.aspx?id=30653">.NET Framework 4</a></p>
+<p><a href="https://forums.crateentertainment.com/t/tool-modding-grim-dawn-modding-suite/37532">GDSearch by Ceno 80</a></p>
+<p>This is a tool that uses a query like syntaxt to enable you to search the game files for specific things. Will be especially helpful when you search for ingame stuff as these things are usually not called the exactly same in the game files as they are ingame.</p>
+<p>Requires the <a href="https://www.java.com/en/">java runtime 1</a></p>
+<p><a href="https://forums.crateentertainment.com/t/deprecated-tool-wanez-modding-tools/38396">Mastery Editor by WareBare 108</a></p>
+<p>This is a tool that visually supports you when it comes down to creating masteries. The current version at the time this guide is written will help you pick the right coordinates for your skills. There is a full visual version work in progress that will go beyond that by allowing to rearrange the entire mastery / class selection screens and everything that belongs to it.</p>
+<h2 id="122-foreword-ii-mod-types">1.2.2 Foreword II - Mod Types</h2>
+<p>You might think now “oh my god, I just want to start modding, why are you shooting me with all this information?”. The simple reason is that I want you to be able to choose the right type of mod for what you want to do so you don’t have to go through painful remakings later when you realized your mod is a few mbs or maybe even a gb larger than it should as it happened to a few persons already.</p>
+<p>Alright now there are 4 different major mod types as long as we stay within the scope of what the official toolset offers:</p>
+<p>Normal Mods</p>
+<p>Normal mods are the result of what happens when you only modify database entries or resource files without building your own custom map. They are started through the custom game menu and will bring you into the usual world of Cairn where your changes will be applied.</p>
+<p>Map Mods</p>
+<p>Map mods are pretty much what the name says: They introduce custom made maps instead of the original Cairn world. In between with the introduction of <a href="https://forums.crateentertainment.com/t/tool-map-decompiler/32307">GlockenGerda’s Map Decompiler 48</a> it’s also possible to merge both or extend Cairn with your custom made maps.</p>
+<p>[Deprecated]Hard Mods</p>
+<p>Hard mods are mods that do not need to be started explicitelly; They are created by modifying the main game’s database and / or resource files so that the changes will always apply without having to start a mod. Now this has different up and down sides and is also sort of deprecated:</p>
+<p>Pros:</p>
+<ul>
+<li>Pretty much the only mod type that let’s you change the main game’s menu background</li>
+<li>Does not need to be explicitelly started through the custom game menu</li>
+<li>Allows playing mods with main game characters</li>
+</ul>
+<p>Cons:</p>
+<ul>
+<li>You will not be able to play with players online anymore unless the persons you want to play with use the same modified game version</li>
+<li>Usually very big filesize up to nearly a gb or more except for one certain exception</li>
+<li>Deprecated as this is not really needed anymore unless you want to make a total conversion of Grim Dawn: This type of mod used to be required a while back as there were certain database files that the game won’t read changes from unless they get written into the main game’s files directly. This has been patched since and therefore is no reason anymore to use hard mods.</li>
+</ul>
+<p>In general, usual mods are recommended over hard mods whereever possible as hard mods are a real pain for both modder and user as building such mods takes extremely long and you’ll get to build your mod very often as for users it’s a pain to download that big files over and over again whenever you release a new update of your mod.</p>
+<p>However there is, as with most things in modding, an exception: If you simply want to modify resource files without a database then there are two more types of “hard mods” that you can take advantage of. I’ll explain only one of them as the second one will required a lot of files, too and therefore is rather even worse than the type of hard mod explained above but more on that topic in the practical part later.</p>
+<p>[Deprecated/Support Dropped]Bouce Mods</p>
+<p>Bouce mods are a special type of normal mods; They are started through the custom game menu, too but they won’t bring you into Cairn directly but get you back to the game menu and at the same time apply your changes so that you can play with your main game characters while having your mod changes applied and at the same time join multiplayer games no matter if the coresponding players have the same mod activated or not.</p>
+<p>With the introduction of the Crucible (survival) mode, this got patched out as it gave Crate trouble and therefore is no more available.</p>
+<h2 id="123-setting-up-asset-manager">1.2.3 Setting Up Asset Manager</h2>
+<p>Finally it’s time for some practical steps: Setting up your Asset Manager! Why Asset Manager first? Simply because it is an easy way to get the main directories to work that you will need for modding: Your working, tools and build directory. Alright, let’s start:</p>
+<p>First, you’ll have to open your windows file explorer and navigate to your Grim Dawn Installation folder which lies by default in</p>
+<div class="language-java highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nl">C</span><span class="p">:</span><span class="err">\</span><span class="n">Program</span><span class="w"> </span><span class="nf">Files</span><span class="w"> </span><span class="p">(</span><span class="n">x86</span><span class="p">)</span><span class="err">\</span><span class="n">Steam</span><span class="err">\</span><span class="n">steamapps</span><span class="err">\</span><span class="n">common</span><span class="err">\</span><span class="n">Grim</span><span class="w"> </span><span class="n">Dawn</span>
+</span></code></pre></div>
+<p>You should see a folder that contains a bunch of directories and files that looks like this:<br/>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="https://i.epvpimg.com/Jk92e.png"><img alt="" src="https://i.epvpimg.com/Jk92e.png"/></a>
+(For me it’s in D, just ignore that, it’s by system design)</p>
+<p>Now if you search this folder, you’ll find a file called AssetManager.exe. Start it (note: may require administrative rights as it otherwise couldn’t do required file operations).</p>
+<p>You should get rewarded with the following login screen now:<br/>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="https://i.epvpimg.com/nSEae.png"><img alt="" src="https://i.epvpimg.com/nSEae.png"/></a></p>
+<p>For now, all we want to do is a simple setup and one person projects so we’re going to work offline. Click “Work Offline”. This window will get interesting when you decide to work together with other modders but dealing with that would be kind of an overkill right now.</p>
+<p>Now there should a bigger window open that looks like this:<br/>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="https://i.epvpimg.com/tDuKc.png"><img alt="" src="https://i.epvpimg.com/tDuKc.png"/></a></p>
+<p>As we want to set up or directories, we now need to click Tools → Options in the menu:<br/>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="https://i.epvpimg.com/M84xe.png"><img alt="" src="https://i.epvpimg.com/M84xe.png"/></a></p>
+<p>This window should open:<br/>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="https://i.epvpimg.com/nt5xd.png"><img alt="" src="https://i.epvpimg.com/nt5xd.png"/></a></p>
+<p>Now there are 5 fields in which we can put directories. For now only the top 3 will be interesting to us as the other two ones are for more advanced modding and when it comes to merging mods / working with expansions. The Working directory is where all the source files for your mods will go, the build directory is where your “compiled” output will get to once you build your mod and the tools directory is where your modding tools are, which is by default the game’s main installation directory.</p>
+<p>Note for Gog Users: Your paths will be different though the base is the same, the only difference is where your installation directory lies.</p>
+<p>These three path might be set for you already, but we’re going to change one of them. The build directory should point to your game installation directory as the Asset Manager will use this path to create a new folder “mods” inside the installation folder from which the game later will read mods to enable you to play your mod:</p>
+<div class="language-java highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="nl">C</span><span class="p">:</span><span class="err">\</span><span class="n">Program</span><span class="w"> </span><span class="nf">Files</span><span class="w"> </span><span class="p">(</span><span class="n">x86</span><span class="p">)</span><span class="err">\</span><span class="n">Steam</span><span class="err">\</span><span class="n">steamapps</span><span class="err">\</span><span class="n">common</span><span class="err">\</span><span class="n">Grim</span><span class="w"> </span><span class="n">Dawn</span><span class="err">\</span>
+</span></code></pre></div>
+<p>Whereas the Tool directory should be the instalation directory:</p>
+<div class="language-java highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="nl">C</span><span class="p">:</span><span class="err">\</span><span class="n">Program</span><span class="w"> </span><span class="nf">Files</span><span class="w"> </span><span class="p">(</span><span class="n">x86</span><span class="p">)</span><span class="err">\</span><span class="n">Steam</span><span class="err">\</span><span class="n">steamapps</span><span class="err">\</span><span class="n">common</span><span class="err">\</span><span class="n">Grim</span><span class="w"> </span><span class="n">Dawn</span><span class="err">\</span>
+</span></code></pre></div>
+<p>Now by default the working directory will point to the same directory as the build directory which is also recommended by the official modding guide.</p>
+<p>This is bad practise as it will result in a mix of output files and source files and might confuse you and potential other modders later if they want to merge your mod with other mods so we’re going to seperate them and make “clean mods”. Also there are several more clean mod guidelines and best practises but more on that later.</p>
+<p>We’re going to create a new folder inside Grim Dawn’s installation folder called “Working”:</p>
+<div class="language-java highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="nl">C</span><span class="p">:</span><span class="err">\</span><span class="n">Program</span><span class="w"> </span><span class="nf">Files</span><span class="w"> </span><span class="p">(</span><span class="n">x86</span><span class="p">)</span><span class="err">\</span><span class="n">Steam</span><span class="err">\</span><span class="n">steamapps</span><span class="err">\</span><span class="n">common</span><span class="err">\</span><span class="n">Grim</span><span class="w"> </span><span class="n">Dawn</span><span class="err">\</span><span class="n">Working</span>
+</span></code></pre></div>
+<p>and put it as working directory. You can navigate to it by clicking the […] button in the Options window in the Asset Manager:<br/>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="https://i.epvpimg.com/LuIdc.png"><img alt="" src="https://i.epvpimg.com/LuIdc.png"/></a></p>
+<p>Note: Keep this in mind as the […] button is the idea of a file browser button in the Asset Manager. You’ll find these buttons very often while modding. They usually indicate that you can choose a database record file or a resource file as reference for that certain entry.</p>
+<p>Ashes of Malmouth Integration</p>
+<p>If you have the Ashes of Malmouth expansion you will have to do a few additional steps in order to be able to work with the expansion files. As mentioned before, there are two more fields “Additional Browse Directories” and “Additional Source Directories”. The additional browse directories field enables the Asset Manager to read additional database record files from a seperate .arz file while the additional source directory provides the Asset Manager with additional resource files for the resources browser window.</p>
+<p>To make these functional with the xpack, we’ll set those to the following paths:  </p>
+<p>Additional Browse Directories:</p>
+<p>The additional browse directory needs to be set to the location where the game stores the xpack data as .arz file inside a folder called “database”. By default it should be in the game’s install directory in a subfolder called “gdx1”, so the path by default looks like this:</p>
+<div class="language-java highlight"><pre><span></span><code><span id="__span-4-1"><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="nl">C</span><span class="p">:</span><span class="err">\</span><span class="n">Program</span><span class="w"> </span><span class="nf">Files</span><span class="w"> </span><span class="p">(</span><span class="n">x86</span><span class="p">)</span><span class="err">\</span><span class="n">Steam</span><span class="err">\</span><span class="n">steamapps</span><span class="err">\</span><span class="n">common</span><span class="err">\</span><span class="n">Grim</span><span class="w"> </span><span class="n">Dawn</span><span class="err">\</span><span class="n">gdx1</span><span class="err">\</span>
+</span></code></pre></div>
+<p>Additional Source Directories:</p>
+<p>The additional source directories path must point to a subfolder of your working directory as this is where the gdx1 resources will be extracted to in the next step. By default it’s in a subfolder inside the working folder in “mods\gdx1”, which would be the following path (assuming you use the above recommended working folder structure):</p>
+<div class="language-java highlight"><pre><span></span><code><span id="__span-5-1"><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="nl">C</span><span class="p">:</span><span class="err">\</span><span class="n">Program</span><span class="w"> </span><span class="nf">Files</span><span class="w"> </span><span class="p">(</span><span class="n">x86</span><span class="p">)</span><span class="err">\</span><span class="n">Steam</span><span class="err">\</span><span class="n">steamapps</span><span class="err">\</span><span class="n">common</span><span class="err">\</span><span class="n">Grim</span><span class="w"> </span><span class="n">Dawn</span><span class="err">\</span><span class="n">Working</span><span class="err">\</span><span class="n">mods</span><span class="err">\</span><span class="n">gdx1</span><span class="err">\</span>
+</span></code></pre></div>
+<p>If you consider to rather use the default variant, your path should look like this:</p>
+<div class="language-java highlight"><pre><span></span><code><span id="__span-6-1"><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="nl">C</span><span class="p">:</span><span class="err">\</span><span class="n">Program</span><span class="w"> </span><span class="nf">Files</span><span class="w"> </span><span class="p">(</span><span class="n">x86</span><span class="p">)</span><span class="err">\</span><span class="n">Steam</span><span class="err">\</span><span class="n">steamapps</span><span class="err">\</span><span class="n">common</span><span class="err">\</span><span class="n">Grim</span><span class="w"> </span><span class="n">Dawn</span><span class="err">\</span><span class="n">mods</span><span class="err">\</span><span class="n">gdx1</span><span class="err">\</span>
+</span></code></pre></div>
+<p>These changes will make the game read both from the main game and the expansion files and merge them into one file structure for both the DBR and the resource import dialogs, so you won’t see any extra “gdx1” folders but instead find the corresponding files in their equivalent folder strucure alongside the normal game files.</p>
+<p>Forgotten Gods &amp; Future Expansions</p>
+<p>If you have the Forgotten Gods (or any possibly following Expansion), you’ll have to take another additional step in order to be able to use the files from the corresponding expansion.</p>
+<p>Just as with the AoM expansion before, you need to set additional Browse Directories and Additional Source Directories for each expansion you want to add to your Asset Manager. All you need to do is add the paths to the expansion files as before with the AoM paths by concatenating the paths with a semicolon (;). The paths need to be in reverse order to their xpack number. This means that if there were 3 xpacks, the order would be PathToXpack3;PathToXpack2;PathToXpack1.</p>
+<p>For example if you wanted to add Forgotten Gods files, the default additional browse path to these is the following (assuming you use the working directory variant described earlier):</p>
+<div class="language-java highlight"><pre><span></span><code><span id="__span-7-1"><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="nl">C</span><span class="p">:</span><span class="err">\</span><span class="n">Program</span><span class="w"> </span><span class="nf">Files</span><span class="w"> </span><span class="p">(</span><span class="n">x86</span><span class="p">)</span><span class="err">\</span><span class="n">Steam</span><span class="err">\</span><span class="n">steamapps</span><span class="err">\</span><span class="n">common</span><span class="err">\</span><span class="n">Grim</span><span class="w"> </span><span class="n">Dawn</span><span class="err">\</span><span class="n">gdx2</span><span class="err">\</span>
+</span></code></pre></div>
+<p>If you now want to add the path to your Additional Browse Directories, assuming you already added a path for the AoM files, your path should look like this afterwards:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-8-1"><a href="#__codelineno-8-1" id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="n">C</span><span class="p">:</span><span class="err">\</span><span class="n">Program</span><span class="w"> </span><span class="n">Files</span><span class="w"> </span><span class="p">(</span><span class="n">x86</span><span class="p">)</span><span class="err">\</span><span class="n">Steam</span><span class="err">\</span><span class="n">steamapps</span><span class="err">\</span><span class="n">common</span><span class="err">\</span><span class="n">Grim</span><span class="w"> </span><span class="n">Dawn</span><span class="err">\</span><span class="n">gdx2</span><span class="err">\</span><span class="p">;</span><span class="n">C</span><span class="p">:</span><span class="err">\</span><span class="n">Program</span><span class="w"> </span><span class="n">Files</span><span class="w"> </span><span class="p">(</span><span class="n">x86</span><span class="p">)</span><span class="err">\</span><span class="n">Steam</span><span class="err">\</span><span class="n">steamapps</span><span class="err">\</span><span class="n">common</span><span class="err">\</span><span class="n">Grim</span><span class="w"> </span><span class="n">Dawn</span><span class="err">\</span><span class="n">gdx1</span><span class="err">\</span><span class="p">;</span>
+</span></code></pre></div>
+<p>Also the same goes for the Additional Source Directories, assuming the path to your Forgotten Gods files are at the following location:</p>
+<div class="language-java highlight"><pre><span></span><code><span id="__span-9-1"><a href="#__codelineno-9-1" id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="nl">C</span><span class="p">:</span><span class="err">\</span><span class="n">Program</span><span class="w"> </span><span class="nf">Files</span><span class="w"> </span><span class="p">(</span><span class="n">x86</span><span class="p">)</span><span class="err">\</span><span class="n">Steam</span><span class="err">\</span><span class="n">steamapps</span><span class="err">\</span><span class="n">common</span><span class="err">\</span><span class="n">Grim</span><span class="w"> </span><span class="n">Dawn</span><span class="err">\</span><span class="n">Working</span><span class="err">\</span><span class="n">mods</span><span class="err">\</span><span class="n">gdx2</span><span class="err">\</span>
+</span></code></pre></div>
+<p>The result would again be a semicolon concatenated path:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-10-1"><a href="#__codelineno-10-1" id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="n">C</span><span class="p">:</span><span class="err">\</span><span class="n">Program</span><span class="w"> </span><span class="n">Files</span><span class="w"> </span><span class="p">(</span><span class="n">x86</span><span class="p">)</span><span class="err">\</span><span class="n">Steam</span><span class="err">\</span><span class="n">steamapps</span><span class="err">\</span><span class="n">common</span><span class="err">\</span><span class="n">Grim</span><span class="w"> </span><span class="n">Dawn</span><span class="err">\</span><span class="n">Working</span><span class="err">\</span><span class="n">mods</span><span class="err">\</span><span class="n">gdx2</span><span class="err">\</span><span class="p">;</span><span class="n">C</span><span class="p">:</span><span class="err">\</span><span class="n">Program</span><span class="w"> </span><span class="n">Files</span><span class="w"> </span><span class="p">(</span><span class="n">x86</span><span class="p">)</span><span class="err">\</span><span class="n">Steam</span><span class="err">\</span><span class="n">steamapps</span><span class="err">\</span><span class="n">common</span><span class="err">\</span><span class="n">Grim</span><span class="w"> </span><span class="n">Dawn</span><span class="err">\</span><span class="n">Working</span><span class="err">\</span><span class="n">mods</span><span class="err">\</span><span class="n">gdx1</span><span class="err">\</span><span class="p">;</span>
+</span></code></pre></div>
+<p>Another side note regarding expansions:<br/>
+The Asset Manager will extract all files from all expansions by default, not matter if the Additional Browse / Source Directories are set or not but it will only display the files correctly in the Import Records window (and also in the World Editor) if the paths are setup correctly.</p>
+<p>Now that we set up our directories, there is only one thing left to do: Extract the game files so we can start modding!</p>
+<p>To do this, choose Tools -&gt; Extract Game Files in the menu:<br/>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="https://i.epvpimg.com/lKzcf.png"><img alt="" src="https://i.epvpimg.com/lKzcf.png"/></a></p>
+<p>And then locate your Grim Dawn installation folder and select it:<br/>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="https://i.epvpimg.com/Lekwh.png"><img alt="" src="https://i.epvpimg.com/Lekwh.png"/></a></p>
+<p>Now press “ok”. You’ll get a warning that you’re about to write the files into your working directory but that’s perfectly fine for our purposes, so you’re going to press “yes”. Now the Asset Manager will be kinda busy for a while as it extracts the entire database and all resource files so you can work easily with it.</p>
+<p>Once you did this you’re done setting up your Asset Manager and therefore the most important directories setup! Congrats <a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="https://forums.crateentertainment.com/images/emoji/twitter/slight_smile.png?v=10"><img alt=":slight_smile:" src="https://forums.crateentertainment.com/images/emoji/twitter/slight_smile.png?v=10" title=":slight_smile:"/></a></p>
+<p>You may wonder now why I only go through the setup of the Asset Manager with you. This is simply because it will suffice for most of the modding tools except for special ones like the PSEditor and I don’t want to confuse you even more than I already do. This will be enough to start out with basic modding and there are more advanced tutorials for these special cases already so there is no need to do it again.</p>
+</article>
+</div>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"></path></svg>
+            Back to top
+          </button>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: About" class="md-footer__link md-footer__link--prev" href="../about/" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Previous
+              </span>
+<div class="md-ellipsis">
+                About
+              </div>
+</div>
+</a>
+<a aria-label="Next: Setup Guide 2" class="md-footer__link md-footer__link--next" href="../setup2/" rel="next">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Next
+              </span>
+<div class="md-ellipsis">
+                Setup Guide 2
+              </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "..", "features": ["navigation.tracking", "navigation.expand", "navigation.top", "search.share", "navigation.footer", "content.action.edit", "content.code.copy"], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../assets/javascripts/bundle.51198bba.min.js"></script>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>
