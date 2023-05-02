@@ -5,9 +5,11 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../tqfan-hard-mod/" rel="prev"/>
+<link href="../steam-deck-mods/" rel="next"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.4.2, mkdocs-material-9.1.6" name="generator"/>
-<title>Modding Tools - Grim Docs</title>
+<title>PSEditor Tutorial - Grim Docs</title>
 <link href="../assets/stylesheets/main.ded33207.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.a0c5b2b5.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -32,7 +34,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#modding-tools">
+<a class="md-skip" href="#ceno-pseditor-tutorial">
           Skip to content
         </a>
 </div>
@@ -56,7 +58,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Modding Tools
+              PSEditor Tutorial
             
           </span>
 </div>
@@ -231,20 +233,21 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_7" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_7" type="checkbox"/>
 <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
           PSEditor
           <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_7_label" class="md-nav" data-md-level="1">
+<nav aria-expanded="true" aria-labelledby="__nav_7_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_7">
 <span class="md-nav__icon md-icon"></span>
           PSEditor
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../pseditor/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<a class="md-nav__link md-nav__link--active" href="./">
         PSEditor Tutorial
       </a>
 </li>
@@ -280,69 +283,33 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#provided-tools">
-    Provided Tools
-  </a>
-</li>
-</ul>
 </nav>
 </div>
 </div>
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<a class="md-content__button md-icon" href="https://github.com/AirTechWick/grim-docs/edit/main/docs/mod-tools.md" title="Edit this page">
+<a class="md-content__button md-icon" href="https://github.com/AirTechWick/grim-docs/edit/main/docs/pseditor.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.7 7c.4-.4.4-1 0-1.4l-2.3-2.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L19 8.9M3 17.2V21h3.8l11-11.1-3.7-3.8L3 17.2M7 2v3h3v2H7v3H5V7H2V5h3V2h2Z"></path></svg>
 </a>
-<h1 id="modding-tools">Modding Tools</h1>
-<p>Here are some modding tools that are provided for you when you download the game</p>
-<h2 id="provided-tools">Provided Tools</h2>
-<ul>
-<li>Asset Manager</li>
-<li>World Editor</li>
-<li>Quest Editor</li>
-<li>Conversation Editor</li>
-<li>PSEditor</li>
-</ul>
-<h2 id="__comments">Comments</h2>
-<!-- Insert generated snippet here -->
-<script async="" crossorigin="anonymous" data-category="Announcements" data-category-id="DIC_kwDOJTy2mM4CVm9P" data-emit-metadata="0" data-input-position="top" data-lang="en" data-loading="lazy" data-mapping="pathname" data-reactions-enabled="1" data-repo="AirTechWick/grim-docs" data-repo-id="R_kgDOJTy2mA" data-strict="0" data-theme="dark" src="https://giscus.app/client.js">
-</script>
-<!-- Synchronize Giscus theme with palette -->
-<script>
-    var giscus = document.querySelector("script[src*=giscus]")
-
-    /* Set palette on initial load */
-    var palette = __md_get("__palette")
-    if (palette && typeof palette.color === "object") {
-      var theme = palette.color.scheme === "slate" ? "dark" : "light"
-      giscus.setAttribute("data-theme", theme) 
-    }
-
-    /* Register event handlers after documented loaded */
-    document.addEventListener("DOMContentLoaded", function() {
-      var ref = document.querySelector("[data-md-component=palette]")
-      ref.addEventListener("change", function() {
-        var palette = __md_get("__palette")
-        if (palette && typeof palette.color === "object") {
-          var theme = palette.color.scheme === "slate" ? "dark" : "light"
-
-          /* Instruct Giscus to change theme */
-          var frame = document.querySelector(".giscus-frame")
-          frame.contentWindow.postMessage(
-            { giscus: { setConfig: { theme } } },
-            "https://giscus.app"
-          )
-        }
-      })
-    })
-  </script>
+<h1 id="ceno-pseditor-tutorial">Ceno PSEditor Tutorial</h1>
+<p>Author: <a href="https://forums.crateentertainment.com/u/ceno/summary">Ceno</a></p>
+<p>So, you want to start using the PSEditor, huh? Great! Well, the first thing to understand about it is what it can and cannot do. It can create Particle § Effects (FX), which I’ll henceforth be calling PFX or pfx. It uses existing textures (.tex), shaders (.ssh), and some neat manipulations to enable the creation of a seemingly limitless number of 2D and 3D effects which, for the most part, are used in skills in the game (projectiles, areas-of-effect, explosions, buffs, etc.). It cannot (to my knowledge) create or manipulate 3D models (or meshes, .msh, as in Grim Dawn terminology).</p>
+<p>What else can the PSEditor do? Well, it can crash every couple hours for no reason…</p>
+<p>Before you get started, you should extract the gamefiles via the Asset Manager. There are many existing tutorials on how to go about that already, so I won’t describe those steps here. When you’ve done that, navigate to [Grim Dawn Installation Directory]/resources/fx/ and copy the folders within there to [Grim Dawn Installation Directory]/source/ (create this folder if it doesn’t exist yet).</p>
+<p>Here’s my source folder:</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../images/source-folder.png"><img alt="sourceFolder" src="../images/source-folder.png"/></a></p>
+<p>You won’t have all the folders I do, since I’m a super awesome modder involved in a ton of other various non-PFX projects. The two red arrows point out the folders you really want for this, the green arrow points out a folder you probably want, and the blue arrow points out a folder I made myself that contains the PFX I’ve created in the PSEditor, so I can keep what I make and what GD already has separated. You may also want /fxtrails/ but I haven’t had a use for it yet. /meshfx/ seems relevant but unless you’re doing really funky stuff you shouldn’t need it at all.</p>
+<p>From there, open up the PSEditor executable found in your [Grim Dawn Installation Directory]. You’ll be greeted with this amazing user interface:</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../images/pseditor-interface.png"><img alt="text" src="../images/pseditor-interface.png"/></a></p>
+<p>Looking good.</p>
+<p>You should then go to File&gt;New in the top left, and be prepared for the program to freeze for about a half minute…</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../images/pseditor-interface2.png"><img alt="text" src="../images/pseditor-interface2.png"/></a></p>
+<p>Great design, Crate.</p>
+<p>When the editor unfreezes, you’ll get a window with a truly daunting number of buttons and options:</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../images/pseditor-interface3.png"><img alt="text" src="../images/pseditor-interface3.png"/></a></p>
+<p>On the bottom, righthand side of this window, click ‘Create New’. You’ll have made a new Emitter, which is probably now tossing a crapton of ugly debug checkerboards at you. Hoorah!</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../images/pseditor-interface4.png"><img alt="text" src="../images/pseditor-interface4.png"/></a></p>
 </article>
 </div>
 </div>
@@ -352,6 +319,34 @@
           </button>
 </main>
 <footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: tqFan Hard Mod Tutorial" class="md-footer__link md-footer__link--prev" href="../tqfan-hard-mod/" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Previous
+              </span>
+<div class="md-ellipsis">
+                tqFan Hard Mod Tutorial
+              </div>
+</div>
+</a>
+<a aria-label="Next: Mods on Steamdeck" class="md-footer__link md-footer__link--next" href="../steam-deck-mods/" rel="next">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Next
+              </span>
+<div class="md-ellipsis">
+                Mods on Steamdeck
+              </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
 <div class="md-footer-meta md-typeset">
 <div class="md-footer-meta__inner md-grid">
 <div class="md-copyright">
