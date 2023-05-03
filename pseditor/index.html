@@ -6,7 +6,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="../tqfan-hard-mod/" rel="prev"/>
-<link href="../steam-deck-mods/" rel="next"/>
+<link href="../emission-pattern/" rel="next"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.4.2, mkdocs-material-9.1.6" name="generator"/>
 <title>PSEditor Tutorial - Grim Docs</title>
@@ -251,6 +251,11 @@
         PSEditor Tutorial
       </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../emission-pattern/">
+        Emission Pattern Tutorial
+      </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -310,6 +315,25 @@
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../images/pseditor-interface3.png"><img alt="text" src="../images/pseditor-interface3.png"/></a></p>
 <p>On the bottom, righthand side of this window, click ‘Create New’. You’ll have made a new Emitter, which is probably now tossing a crapton of ugly debug checkerboards at you. Hoorah!</p>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../images/pseditor-interface4.png"><img alt="text" src="../images/pseditor-interface4.png"/></a></p>
+<p>My first recommendation is to give this Emitter a name. Call it whatever you want, in the ‘Emitter Options’ “Name:” field. Try to make it something descriptive unless you have the memory of a god:</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../images/pseditor-interface5.png"><img alt="text" src="../images/pseditor-interface5.png"/></a></p>
+<p>Alright, let’s take a moment to actually look at what we’ve got presented to us here on this window.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../images/pseditor-interface6.png"><img alt="text" src="../images/pseditor-interface6.png"/></a></p>
+<p>I’ve scribbled out Shader selection because for the vast majority (99%+) of pfx files you create, you won’t need to bother with it.</p>
+<p>At the top of this window is a ‘Run System’ button that ‘plays’ every Emitter that has ‘Render’ ticked underneath its ‘Emitter Life Span’ setting. ‘Run System’ essentially begins the operation of your rendering-Emitters as they would appear in-game. Pretty useful. ‘Render’ is essentially an on/off switch for a particular Emitter, controlling whether or not it actually emits any particles during the pfx’s runtime. This is mostly useful for debugging work-in-progress pfx’s, though sometimes you may wish to create a pfx with several Emitters, then make a pfx with all but one of those Emitters rendering, and save them as different files. Whether an Emitter is used during gameplay is dictated by the ‘Render’ checkbox.</p>
+<p>‘Emitter Life Span’ and ‘Particle Life Span’, pointed out above, are two very different things not to be confused. When you create a new Emitter, they are both 10.0 (seconds). I’ve changed them to 1.0 seconds in the above image, and would usually recommend you do the same while you’re testing each new Emitter you create. An Emitter emits Particles for as long as it’s alive (Emitter Life Span) and those Particles are displayed for its own lifetime (Particle Life Span). What this means is that, in the above image, a Particle emitted when the system starts running disappears one second later, and a Particle emitted when the system finishes running also disappears one second later, meaning we can have particles for up to (Emitter Life Span + Particle Life Span) 2 seconds in our current example.</p>
+<p>Still following along? Good, because each of these images is only going to get more complicated.</p>
+<p>Let’s pick a texture:</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../images/pseditor-interface7.png"><img alt="text" src="../images/pseditor-interface7.png"/></a></p>
+<p>Clicking the ‘Pick Texture’ box will open up a dialog box allowing you to choose a texture for this Emitter to emit as a Particle. I’ve chosen /FX/textures/runeritualcircle01.tex for this example. Click ‘Run System’, and we’ll see what happens as a result…</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../images/pseditor-interface8.png"><img alt="text" src="../images/pseditor-interface8.png"/></a></p>
+<p>WTF is all this dusty crap? Well, at least we’ve gotten rid of those pesky checkerboards now…</p>
+<p>Let’s tick ‘Looping’ and ‘Orient Vertically’ before we move on. (Also zoom in a bit to see what’s going on.)</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../images/pseditor-interface9.png"><img alt="text" src="../images/pseditor-interface9.png"/></a></p>
+<p>‘Looping’ is a very useful thing for Emitters because it makes them run their entire emission pattern over and over. But, you may ask, why bother with having an Emitter Life Span field for Emitters that are on loop? A looping Emitter plays its emission pattern from start to finish, and then repeats from the start again. We’ll start to see in the next post (because I’ve hit the image limit) how to time things in an Emitter’s emission pattern.</p>
+<p>An example of a pfx that has both looping and one-time Emitters is Maiven’s Sphere of Protection; it has an initial flash (one-time) on cast followed by the sphere itself, which is on loop. A loop continues until the game stops calling the pfx file, which is primarily controlled by database (.dbr) files.</p>
+<p>‘Orient Vertically’ makes an Emitter orient its emitted Particles along a flat plane. This is useful for stuff that you want to have appear differently based on the camera angle. An example of a pfx that Orients Vertically is Sigil of Consumption (which, as you may have figured out, this tutorial will make a very basic version of). An example of a pfx that does not Orient Vertically is Curse of Frailty (or basically every other buff/debuff in the game). Choosing to have something not Orient Vertically will make that particular Particle appear to always be facing the camera.</p>
+<p>In the next post, we’ll begin changing the emission pattern of our Emitter, so that it goes from a jumbled mess of nonsense sigils to a defined, interesting sigil upon the ground.</p>
 <h2 id="__comments">Comments</h2>
 <!-- Insert generated snippet here -->
 <script async="" crossorigin="anonymous" data-category="Announcements" data-category-id="DIC_kwDOJTy2mM4CVm9P" data-emit-metadata="0" data-input-position="top" data-lang="en" data-loading="lazy" data-mapping="pathname" data-reactions-enabled="1" data-repo="AirTechWick/grim-docs" data-repo-id="R_kgDOJTy2mA" data-strict="0" data-theme="dark" src="https://giscus.app/client.js">
@@ -366,13 +390,13 @@
               </div>
 </div>
 </a>
-<a aria-label="Next: Mods on Steamdeck" class="md-footer__link md-footer__link--next" href="../steam-deck-mods/" rel="next">
+<a aria-label="Next: Emission Pattern Tutorial" class="md-footer__link md-footer__link--next" href="../emission-pattern/" rel="next">
 <div class="md-footer__title">
 <span class="md-footer__direction">
                 Next
               </span>
 <div class="md-ellipsis">
-                Mods on Steamdeck
+                Emission Pattern Tutorial
               </div>
 </div>
 <div class="md-footer__button md-icon">
