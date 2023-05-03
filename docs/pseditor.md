@@ -1,3 +1,8 @@
+---
+comments: true
+---
+
+
 # Ceno PSEditor Tutorial
 
 Author: [Ceno](https://forums.crateentertainment.com/u/ceno/summary)

@@ -1,3 +1,8 @@
+---
+comments: true
+---
+
+
 # How to get Grim Dawn Mods on Steam Deck Linux
 
 Author: [scottc](https://github.com/scottc)

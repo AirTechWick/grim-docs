@@ -1,6 +1,3 @@
----
-comments: true
----
 # About
 
 Welcome to this Grim Dawn modding guide website! Our mission is to help new beginners get into modding Grim Dawn.

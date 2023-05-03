@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Community Modpacks
 
 ## [Grimarillion](https://www.nexusmods.com/grimdawn/mods/79) by [Asylum101](https://forums.crateentertainment.com/u/asylum101/summary)

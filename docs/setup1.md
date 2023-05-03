@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Modding Setup 1
 
 Author: [Elfe](https://forums.crateentertainment.com/u/Elfe)
