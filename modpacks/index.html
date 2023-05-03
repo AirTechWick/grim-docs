@@ -167,12 +167,12 @@
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="../setup1/">
-        Setup Guide 1
+        Elfe Setup Guide 1
       </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../setup2/">
-        Setup Guide 2
+        Elfe Setup Guide 2
       </a>
 </li>
 </ul>
@@ -366,6 +366,39 @@
 <h2 id="dail-by-davood"><a href="https://www.nexusmods.com/grimdawn/mods/11">Dail</a> by <a href="https://forums.crateentertainment.com/u/davood/summary">Davood</a></h2>
 <h2 id="not-so-grim-by-stedman420"><a href="https://www.nexusmods.com/grimdawn/mods/39">Not So Grim</a> by <a href="https://forums.crateentertainment.com/u/stedman420/summary">stedman420</a></h2>
 <h2 id="dawn-of-masteries-by-mamba"><a href="https://www.nexusmods.com/grimdawn/mods/82">Dawn of Masteries</a> by <a href="https://forums.crateentertainment.com/u/mamba/summary">mamba</a></h2>
+<h2 id="__comments">Comments</h2>
+<!-- Insert generated snippet here -->
+<script async="" crossorigin="anonymous" data-category="Announcements" data-category-id="DIC_kwDOJTy2mM4CVm9P" data-emit-metadata="0" data-input-position="top" data-lang="en" data-loading="lazy" data-mapping="pathname" data-reactions-enabled="1" data-repo="AirTechWick/grim-docs" data-repo-id="R_kgDOJTy2mA" data-strict="0" data-theme="dark" src="https://giscus.app/client.js">
+</script>
+<!-- Synchronize Giscus theme with palette -->
+<script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    /* Set palette on initial load */
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate" ? "dark" : "light"
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    /* Register event handlers after documented loaded */
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate" ? "dark" : "light"
+
+          /* Instruct Giscus to change theme */
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
 </article>
 </div>
 </div>

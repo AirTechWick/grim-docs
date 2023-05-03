@@ -9,7 +9,7 @@
 <link href="../import-single-record/" rel="next"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.4.2, mkdocs-material-9.1.6" name="generator"/>
-<title>Setup Guide 2 - Grim Docs</title>
+<title>Elfe Setup Guide 2 - Grim Docs</title>
 <link href="../assets/stylesheets/main.ded33207.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.a0c5b2b5.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -58,7 +58,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Setup Guide 2
+              Elfe Setup Guide 2
             
           </span>
 </div>
@@ -167,17 +167,17 @@
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="../setup1/">
-        Setup Guide 1
+        Elfe Setup Guide 1
       </a>
 </li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
-          Setup Guide 2
+          Elfe Setup Guide 2
           <span class="md-nav__icon md-icon"></span>
 </label>
 <a class="md-nav__link md-nav__link--active" href="./">
-        Setup Guide 2
+        Elfe Setup Guide 2
       </a>
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
 <label class="md-nav__title" for="__toc">
@@ -445,6 +445,39 @@ On the right there should be a side bar where you have a treeview with a folder 
 <p>Important note regarding building Assets: You need to build your mod at least once via F7 / Build -&gt; Build menu before being able to use the right click variant as you’ll otherwise get an error telling you that the Asset Manager failed to update an archive. This is because the Asset Manager first needs to create a Maps.arc file which can be updated before being able to update it. It will create it once you have a map asset and build your entire mod but not before that.</p>
 <p>Congrats, you now can enter your world in the custom game menu inside Grim Dawn!</p>
 <p>Keep in mind that you will always have to repeat all the steps from building pathing to building your mod once you updated your world as otherwise the file the game reads will not get updated. The only part you do not have to do again is the right click on the .wrl file to create an asset as it’s already there and will be updated automatically once you either build the asset or the mod.</p>
+<h2 id="__comments">Comments</h2>
+<!-- Insert generated snippet here -->
+<script async="" crossorigin="anonymous" data-category="Announcements" data-category-id="DIC_kwDOJTy2mM4CVm9P" data-emit-metadata="0" data-input-position="top" data-lang="en" data-loading="lazy" data-mapping="pathname" data-reactions-enabled="1" data-repo="AirTechWick/grim-docs" data-repo-id="R_kgDOJTy2mA" data-strict="0" data-theme="dark" src="https://giscus.app/client.js">
+</script>
+<!-- Synchronize Giscus theme with palette -->
+<script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    /* Set palette on initial load */
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate" ? "dark" : "light"
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    /* Register event handlers after documented loaded */
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate" ? "dark" : "light"
+
+          /* Instruct Giscus to change theme */
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
 </article>
 </div>
 </div>
@@ -455,7 +488,7 @@ On the right there should be a side bar where you have a treeview with a folder 
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: Setup Guide 1" class="md-footer__link md-footer__link--prev" href="../setup1/" rel="prev">
+<a aria-label="Previous: Elfe Setup Guide 1" class="md-footer__link md-footer__link--prev" href="../setup1/" rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
 </div>
@@ -464,7 +497,7 @@ On the right there should be a side bar where you have a treeview with a folder 
                 Previous
               </span>
 <div class="md-ellipsis">
-                Setup Guide 1
+                Elfe Setup Guide 1
               </div>
 </div>
 </a>
